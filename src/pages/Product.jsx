@@ -112,7 +112,7 @@ const Product = () => {
               </div>
             </div>
           </div>
-          <div data-aos="fade-up" className="flex justify-end border">
+          <div data-aos="fade-up" className="flex justify-end">
             <div className="bg-primary py-8 px-8 md:w-96 rounded-xl">
               <div className="flex flex-col gap-5">
                 <p className="text-4xl font-bold text-white text-center">
