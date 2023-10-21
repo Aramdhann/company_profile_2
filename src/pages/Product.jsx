@@ -74,13 +74,13 @@ const Product = () => {
               <div className="flex flex-col gap-8">
                 <div>
                   <div>
-                    <p className="mb-2">Berizin dan Diawasi Oleh:</p>
+                    <p className="mb-2 footer-title text-dope">Berizin dan Diawasi Oleh:</p>
                     <img src={logo_ojk} alt="logo OJK" className="h-12" />
                   </div>
                 </div>
                 <div>
                   <div>
-                    <p className="mb-2">Tersertifikasi ISO:</p>
+                    <p className="mb-2 footer-title text-dope">Tersertifikasi ISO:</p>
                     <img src={logo_iso} alt="logo iso" className="h-12" />
                   </div>
                 </div>
@@ -88,7 +88,7 @@ const Product = () => {
               <div className="flex flex-col gap-8">
                 <div>
                   <div>
-                    <p className="mb-2">Anggota terdaftar dari:</p>
+                    <p className="mb-2 footer-title text-dope">Anggota terdaftar dari:</p>
                     <div className="flex flex-row gap-5">
                       <img src={logo_afpi} alt="logo afpi" className="h-12" />
                       <img
@@ -101,7 +101,7 @@ const Product = () => {
                 </div>
                 <div>
                   <div>
-                    <p className="mb-2">Terdaftar di:</p>
+                    <p className="mb-2 footer-title text-dope">Terdaftar di:</p>
                     <img
                       src={logo_kominfo}
                       alt="logo kominfo"
