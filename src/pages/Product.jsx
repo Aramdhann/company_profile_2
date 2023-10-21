@@ -17,8 +17,8 @@ const Product = () => {
   const maxTenorMonths = 6; // max tenor
   const stepMonths = 1; // step in months
 
-  const [tenor, setTenor] = useState(1); // State for tenor (in months)
-  const [value, setValue] = useState(100000); // Initial value set to 3,000,000
+  const [tenor, setTenor] = useState(0); // State for tenor (in months)
+  const [value, setValue] = useState(0); // Initial value set to 3,000,000
   const [valueInterest, setValueInterest] = useState(0); // initial value of interest
 
   const formatCurrency = (value) => {
@@ -128,7 +128,7 @@ const Product = () => {
                       {formatCurrency(value)}
                     </p>
                   </div>
-                  <div class="range">
+                  <div>
                     <input
                       type="range"
                       min="0"
@@ -137,7 +137,7 @@ const Product = () => {
                       value={value}
                       onChange={handleChange}
                       id="range"
-                      className="w-full h-2 cursor-pointer"
+                      className="w-full cursor-pointer"
                     />
                   </div>
                   <div className="flex justify-between text-xs md:text-base">
@@ -157,7 +157,7 @@ const Product = () => {
                       {tenor} Bulan
                     </p>
                   </div>
-                  <div class="range">
+                  <div>
                     <input
                       type="range"
                       min="0"
@@ -166,7 +166,7 @@ const Product = () => {
                       value={tenor}
                       onChange={handleTenorChange}
                       id="range"
-                      className="w-full h-2 cursor-pointer"
+                      className="w-full cursor-pointer"
                     />
                   </div>
                   <div className="flex justify-between text-xs md:text-base">
