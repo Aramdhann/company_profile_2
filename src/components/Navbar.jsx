@@ -7,6 +7,7 @@ import logo_ojk from "../assets/ojk-new.svg";
 import id_lang from "../assets/id_icon.png";
 import en_lang from "../assets/en_icon.png";
 import FraudNav from "../components/FraudNav";
+import { AiOutlineInfoCircle } from "react-icons/ai";
 
 const navbar = () => {
   return (
@@ -54,7 +55,7 @@ const navbar = () => {
               <li>
                 <Link
                   to="/event"
-                  className="text-base block rounded-lg md:w-[80px] hover:text-primary hover:bg-transparent focus:bg-secondary"
+                  className="text-base block rounded-lg hover:text-primary hover:bg-transparent focus:bg-secondary"
                 >
                   Acara & Kegiatan
                 </Link>
@@ -62,7 +63,7 @@ const navbar = () => {
               <li>
                 <Link
                   to="/about"
-                  className="text-base block rounded-lg md:w-[80px] hover:text-primary hover:bg-transparent focus:bg-secondary"
+                  className="text-base block rounded-lg hover:text-primary hover:bg-transparent focus:bg-secondary"
                 >
                   Tentang Kami
                 </Link>
@@ -78,11 +79,20 @@ const navbar = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="text-base block rounded-lg md:w-[80px] hover:text-primary hover:bg-transparent focus:bg-secondary"
+                  className="text-base block rounded-lg hover:text-primary hover:bg-transparent focus:bg-secondary"
                 >
                   Hubungi Kami
                 </Link>
               </li>
+              <div className="flex items-center gap-2 p-2">
+                <a href="">
+                  <img src={id_lang} alt="bahasa indonesia" className="w-6" />
+                </a>
+                <img src={gap} alt="gap" className="h-4 md:h-6" />
+                <a href="">
+                  <img src={en_lang} alt="bahasa inggris" className="w-6" />
+                </a>
+              </div>
             </ul>
           </div>
           <div className=" flex items-center gap-2 md:gap-[10px]">
@@ -162,13 +172,49 @@ const navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <div className="text-dope bg-secondary focus:ring-4 focus:outline-none font-base rounded-[30px] text-xs md:text-base px-3 py-2 md:py-4 text-center md:mr-0">
-            <span>
-              TKB90 = <span className="value_tkb90">92.50%</span>
-            </span>
+          <div className="items-center gap-[2px] md:gap-1 me-1 md:me-2 text-xs md:text-base hidden sm:flex">
+            <a href="">
+              <img
+                src={id_lang}
+                alt="bahasa indonesia"
+                className="w-6 md:w-8"
+              />
+            </a>
+            <img src={gap} alt="gap" className="h-4 md:h-6" />
+            <a href="">
+              <img src={en_lang} alt="bahasa inggris" className="w-6 md:w-8" />
+            </a>
+          </div>
+          <div className="text-dope bg-secondary focus:ring-4 focus:outline-none font-base rounded-[30px] text-xs md:text-base px-2 py-2 md:py-4 text-center md:mr-0">
+            <div className="flex items-center gap-1">
+              TKB90 =<div className="value_tkb90">92.50%</div>
+              <button
+                onClick={() =>
+                  document.getElementById("modal_tkb").showModal()
+                }
+              >
+                <AiOutlineInfoCircle />
+              </button>
+              {/* <div
+                className="tooltip tooltip-bottom"
+                data-tip="Tingkat Keberhasilan Total (TKB TOTAL) merupakan angka perbandingan nilai kredit bermasalah (Non Performing Loan / NPL) terhadap total nilai pinjaman yang berhasil disalurkan."
+              ></div> */}
+            </div>
           </div>
         </div>
       </div>
+      <dialog id="modal_tkb" className="modal">
+        <div className="modal-box">
+          <form method="dialog">
+            {/* if there is a button in form, it will close the modal */}
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+              ✕
+            </button>
+          </form>
+          <h3 className="font-bold text-lg">TKB Total</h3>
+          <p className="py-4">Tingkat Keberhasilan Total (TKB TOTAL) merupakan angka perbandingan nilai kredit bermasalah (Non Performing Loan / NPL) terhadap total nilai pinjaman yang berhasil disalurkan.</p>
+        </div>
+      </dialog>
     </>
   );
 };

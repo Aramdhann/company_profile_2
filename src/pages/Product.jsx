@@ -17,8 +17,8 @@ const Product = () => {
   const maxTenorMonths = 6; // max tenor
   const stepMonths = 1; // step in months
 
-  const [tenor, setTenor] = useState(0); // State for tenor (in months)
-  const [value, setValue] = useState(0); // Initial value set to 3,000,000
+  const [tenor, setTenor] = useState(2); // State for tenor (in months)
+  const [value, setValue] = useState(2000000); // Initial value set to 3,000,000
   const [valueInterest, setValueInterest] = useState(0); // initial value of interest
 
   const formatCurrency = (value) => {
@@ -30,11 +30,16 @@ const Product = () => {
 
   const calculateInterest = () => {
     // Assuming 0,5% interest rate per month
-    const interestRate = 0.005;
-    const totalInterest = interestRate * tenor;
-    const interest = value * totalInterest;
-    const valueInterest = value + interest;
-    setValueInterest(valueInterest);
+    // const interestRate = 0.005;
+    // const totalInterest = interestRate * tenor;
+    // const interest = value * totalInterest;
+    // const valueInterest = value + interest;
+    // setValueInterest(valueInterest);
+    const interestRate = 0.05;
+    const valuePerMonth = value / tenor;
+    const interestPerMonth = valuePerMonth * interestRate;
+    const valueInterestPerMonth = valuePerMonth + interestPerMonth;
+    setValueInterest(valueInterestPerMonth);
   };
 
   useEffect(() => {
@@ -178,8 +183,9 @@ const Product = () => {
                 </div>
                 <div className="space-y-2">
                   <div>
-                    <p className="text-center text-3xl font-semibold leading-none">
-                      Biaya
+                    <p className="text-center text-2xl font-semibold leading-none">
+                      {/* Biaya */}
+                      Cicilan per Bulan
                     </p>
                     <p className="text-center text-sm">
                       *) sudah termasuk bunga

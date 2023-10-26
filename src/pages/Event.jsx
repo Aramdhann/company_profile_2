@@ -17,38 +17,38 @@ const Event = () => {
       <FraudNav />
       <div className="mx-auto">
         <div data-aos="fade-up" className="my-4">
-          <h1 className="text-center font-bold text-lg sm:text-2xl md:text-4xl">
+          <h1 className="text-center font-bold text-2xl sm:text-3xl md:text-4xl">
             Acara dan Kegiatan
           </h1>
         </div>
 
-        <div class="relative my-6 mx-4 md:mx-8">
+        <div className="relative my-6 mx-4 md:mx-8">
           <div className="overflow-x-auto">
             <table className="table table-zebra">
               {/* head */}
-              <thead>
+              <thead className="text-lg">
                 <tr>
                   <th></th>
                   <th>
-                    <div className="flex gap-1">
+                    <div className="flex items-center gap-1">
                       <MdDateRange />
                       <p>Tanggal</p>
                     </div>
                   </th>
                   <th>
-                    <div className="flex gap-1">
+                    <div className="flex items-center gap-1">
                       <MdFormatListBulleted />
                       <p>Kegiatan Acara</p>
                     </div>
                   </th>
                   <th>
-                    <div className="flex gap-1">
+                    <div className="flex items-center gap-1">
                       <MdLocationPin />
                       <p>Lokasi</p>
                     </div>
                   </th>
                   <th>
-                    <div className="flex gap-1">
+                    <div className="flex items-center gap-1">
                       <MdLink />
                       <p>Liputan</p>
                     </div>

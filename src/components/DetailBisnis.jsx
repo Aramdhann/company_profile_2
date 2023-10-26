@@ -73,7 +73,7 @@ const DetailBisnis = () => {
           </dd>
         </div>
       </div>
-      <p data-aos="fade-up" className="flex w-8/12 text-gray-400 text-sm md:text-base">
+      <p data-aos="fade-up" className="flex w-8/12 text-abu text-sm md:text-base">
         *) Terakhir diperbarui pada 25/10/2023
       </p>
     </div>

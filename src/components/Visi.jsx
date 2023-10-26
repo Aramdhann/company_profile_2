@@ -20,7 +20,7 @@ const Visi = () => {
         className="flex flex-col w-96 border rounded-xl p-5 shadow-md"
       >
         <p className="text-center font-bold text-2xl md:text-4xl mb-4">Misi</p>
-        <ul className="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
+        <ul className="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400 gap-2 flex flex-col">
           <li className="flex items-center">
             <svg
               className="w-3.5 h-3.5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0"

@@ -7,14 +7,14 @@ import Fraud from "../components/Fraud";
 const Ads = () => {
   return (
     <>
-      <div className="bg-primary w-full h-full">
+      <div data-aos="fade-in" className="bg-primary w-full h-full">
         <div className="flex flex-wrap sm:flex-nowrap items-center">
           <div
             data-aos="fade-right"
             className="pl-4 sm:px-4 md:pl-8 py-4 md:py-0"
           >
             <div className="flex flex-col">
-              <p className="font-semibold leading-tight text-lg md:text-4xl mb-3 md:mb-6 md:w-3/4">
+              <p className="font-bold leading-tight text-lg md:text-4xl mb-3 md:mb-6 md:w-3/4">
                 "Download aplikasi CashCepat sekarang untuk pinjaman cepat!"
               </p>
               <Link

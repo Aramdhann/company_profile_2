@@ -17,7 +17,7 @@ const Contact = () => {
       <FraudNav />
       <div className="flex flex-col justify-center mx-auto container">
         <div data-aos="fade-up" className="mt-4 mb-10 flex justify-center">
-          <h1 className="text-center font-bold text-lg sm:text-2xl md:text-4xl">
+          <h1 className="text-center font-bold text-2xl sm:text-3xl md:text-4xl">
             Hubungi Kami
           </h1>
         </div>
@@ -123,7 +123,7 @@ const Contact = () => {
                   <input
                     type="text"
                     id="name"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="input input-bordered input-secondary w-full max-w-xs"
                     placeholder="type here ..."
                     required
                   />
@@ -138,7 +138,7 @@ const Contact = () => {
                   <input
                     type="email"
                     id="email"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="input input-bordered input-secondary w-full max-w-xs"
                     placeholder="type here ..."
                     required
                   />
@@ -154,7 +154,7 @@ const Contact = () => {
                     type="text"
                     id="message"
                     rows="4"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    className="textarea textarea-secondary w-full"
                     placeholder="type here ..."
                   ></textarea>
                 </div>

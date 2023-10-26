@@ -3,7 +3,7 @@ import { MdEmail, MdFacebook } from "react-icons/md";
 import { AiFillInstagram, AiFillYoutube } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import playstore_download from "../assets/playstore_download.svg";
-import logo_cashcepat from "../assets/cashcepat_logo.svg";
+import logo_cashcepat from "../assets/logo_cashcepat.svg";
 import logo_ojk from "../assets/ojk-new.svg";
 import logo_afpi from "../assets/afpi-new-logo.svg";
 import logo_legal from "../assets/legal_afpi.svg";
