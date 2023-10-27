@@ -117,7 +117,7 @@ const FAQ = () => {
     <>
       <Navbar />
       <FraudNav />
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center container mx-auto">
         <div data-aos="fade-up" className="my-4 flex justify-center">
           <h1 className="text-center font-bold text-2xl sm:text-3xl md:text-4xl mb-5">
             Pertanyaan yang Sering Diajukan

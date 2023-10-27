@@ -12,8 +12,8 @@ import logo_kominfo from "../assets/kominfo_logo.svg";
 
 const Footer = () => {
   return (
-    <div data-aos="fade-up">
-      <footer className="footer p-10 bg-primary text-white">
+    <div data-aos="fade-up" className="bg-primary text-white">
+      <footer className="footer p-10 container mx-auto">
         <nav>
           <div className="bg-white rounded-xl p-2 w-fit">
             <img src={logo_cashcepat} alt="logo cashcepat" />
@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="mb-4">
             <header className="footer-title text-xl text-dope">Kantor Pusat</header>
             <p className="text-sm md:text-base">
-              Blue Bird Office Park 6th Jalan Mampang Prapatan No. 15
+              Blue Bird Office Park 6th Floor, Jalan Mampang Prapatan No. 15
             </p>
           </div>
           <div className="flex flex-col gap-1">

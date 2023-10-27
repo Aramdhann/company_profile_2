@@ -8,7 +8,7 @@ const Ads = () => {
   return (
     <>
       <div data-aos="fade-in" className="bg-primary w-full h-full">
-        <div className="flex flex-wrap sm:flex-nowrap items-center">
+        <div className="flex flex-wrap sm:flex-nowrap items-center container mx-auto">
           <div
             data-aos="fade-right"
             className="pl-4 sm:px-4 md:pl-8 py-4 md:py-0"

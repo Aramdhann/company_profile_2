@@ -11,8 +11,8 @@ import { AiOutlineInfoCircle } from "react-icons/ai";
 
 const navbar = () => {
   return (
-    <>
-      <div className="navbar bg-base-100 border">
+    <div className="container mx-auto">
+      <div className="navbar bg-white">
         <div className="navbar-start w-full md:w-1/2">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -185,7 +185,7 @@ const navbar = () => {
               <img src={en_lang} alt="bahasa inggris" className="w-6 md:w-8" />
             </a>
           </div>
-          <div className="text-dope bg-secondary focus:ring-4 focus:outline-none font-base rounded-[30px] text-xs md:text-base px-2 py-2 md:py-4 text-center md:mr-0">
+          <div className="text-dope bg-secondary focus:ring-4 focus:outline-none font-base rounded-lg text-xs md:text-sm px-1 py-2 md:px-2 text-center md:mr-0">
             <div className="flex items-center gap-1">
               TKB90 =<div className="value_tkb90">92.50%</div>
               <button
@@ -195,10 +195,6 @@ const navbar = () => {
               >
                 <AiOutlineInfoCircle />
               </button>
-              {/* <div
-                className="tooltip tooltip-bottom"
-                data-tip="Tingkat Keberhasilan Total (TKB TOTAL) merupakan angka perbandingan nilai kredit bermasalah (Non Performing Loan / NPL) terhadap total nilai pinjaman yang berhasil disalurkan."
-              ></div> */}
             </div>
           </div>
         </div>
@@ -215,7 +211,7 @@ const navbar = () => {
           <p className="py-4">Tingkat Keberhasilan Total (TKB TOTAL) merupakan angka perbandingan nilai kredit bermasalah (Non Performing Loan / NPL) terhadap total nilai pinjaman yang berhasil disalurkan.</p>
         </div>
       </dialog>
-    </>
+    </div>
   );
 };
 

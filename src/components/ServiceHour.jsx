@@ -7,7 +7,7 @@ import gap from "../assets/gap.svg";
 
 const ServiceHour = () => {
   return (
-    <div className="flex gap-3 sm:gap-5 md:gap-16 mx-auto justify-center my-10 md:my-16 w-11/12">
+    <div className="flex gap-3 sm:gap-5 md:gap-16 mx-auto justify-center py-20 sm:py-36 w-11/12">
       <div data-aos="fade-up" className="hidden md:flex">
         <img src={img_serviceHour} alt="img jam pelayanan customer service" />
       </div>

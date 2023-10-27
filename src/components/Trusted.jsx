@@ -8,7 +8,7 @@ import logo_kominfo from "../assets/kominfo_logo.svg";
 const Trusted = () => {
   return (
     <div data-aos="fade-in" className="flex justify-center bg-abu">
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap container border py-3">
         <div className="flex grow p-5 mx-7 justify-center">
           <div>
             <p className="text-center mb-2 footer-title text-dope">Berizin dan Diawasi Oleh:</p>

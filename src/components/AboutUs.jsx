@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 
 const AboutUs = () => {
   return (
-    <div className="py-5 bg-gradient-to-r from-white to-primary">
-      <div className="flex flex-wrap flex-col md:flex-row items-center mx-auto">
+    <div className="py-5 bg-gradient-to-r from-white to-primary w-full">
+      <div className="flex flex-wrap flex-col md:flex-row items-center mx-auto container">
         <div data-aos="fade-right" className="p-5 md:p-14 md:w-6/12">
           <h1 className="font-bold text-3xl sm:text-4xl mb-4 md:text-6xl md:mb-7">
             Tentang Kami

@@ -7,11 +7,11 @@ import icon_gift from "../assets/gift.svg";
 
 const why = () => {
   return (
-    <div data-aos="fade-in" className="pt-14 bg-primary">
+    <div data-aos="fade-in" className="pt-16 pb-10 sm:pt-20 sm:pb-14 bg-primary">
       <h1 data-aos="fade-up" className="font-bold px-5 text-2xl md:text-4xl text-center mb-24 md:mb-32">
         Mengapa Harus Cashcepat?
       </h1>
-      <div className="flex flex-wrap justify-center gap-3">
+      <div className="flex flex-wrap justify-center gap-3 container mx-auto">
         <div className="flex justify-center flex-wrap grow gap-8">
           <div data-aos="fade-up" className="w-[300px] bg-white rounded-[15px] relative mb-16">
             <div className="absolute w-full">

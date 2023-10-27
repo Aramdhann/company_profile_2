@@ -3,7 +3,7 @@ import img_milestone from "../assets/milestone.svg";
 
 const Milestone = () => {
   return (
-    <div className="flex flex-col items-center gap-1 sm:gap-2 md:gap-4">
+    <div className="flex flex-col items-center gap-1 sm:gap-2 md:gap-4 mb-20 sm:mb-36">
       <div data-aos="fade-up" data-aos-delay="300">
         <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl text-center">
           Perjalanan Kami

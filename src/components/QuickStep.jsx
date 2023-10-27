@@ -7,7 +7,7 @@ import img_repayment from "../assets/repayment.svg";
 
 const QuickStep = () => {
   return (
-    <div className="flex flex-wrap py-28 items-center justify-center gap-12 px-10">
+    <div className="flex flex-wrap py-20 sm:py-36 items-center justify-center gap-12 px-10">
       <div className="flex justify-center">
         <div className="flex space-x-5">
           <img src={icon_4} alt="icon 4 langkah" />

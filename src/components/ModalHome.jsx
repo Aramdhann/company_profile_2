@@ -17,7 +17,7 @@ const ModalHome = () => {
             <p className="font-bold text-lg uppercase text-center mb-4">
               discalimer resiko
             </p>
-            <div className="flex justify-center bg-primary text-dope w-full p-3 rounded-xl">
+            <div className="flex justify-center bg-primary text-dope w-full p-2 rounded-xl">
               <img
                 src={warning}
                 alt="icon warning"

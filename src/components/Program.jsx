@@ -57,7 +57,7 @@ const Program = () => {
         Program - Program
       </div>
       <div className="flex justify-center">
-        <div data-aos="fade-up" className="overflow-x-auto w-10/12">
+        <div data-aos="fade-up" className="overflow-x-auto">
           <div className="flex flex-row gap-4 md:gap-8 relative">
             {programs.map((program, index) => (
               <div

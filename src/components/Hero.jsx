@@ -5,7 +5,7 @@ import DownloadFraud from "../components/DownloadFraud";
 
 const Hero = () => {
   return (
-    <div className="py-5">
+    <div className="py-5 container mx-auto">
       <div className="w-10/12 mx-auto flex flex-wrap items-center">
         <div data-aos="fade-right" className="mb-14 md:mb-0 md:w-7/12">
           <h1 className="font-bold text-2xl sm:text-3xl mb-4 md:text-4xl lg:text-6xl md:mb-7">
