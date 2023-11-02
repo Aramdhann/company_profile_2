@@ -5,7 +5,7 @@ import gap from "../assets/gap.svg";
 import logo_afpi from "../assets/AFPI_logo_merge.svg";
 import logo_ojk from "../assets/ojk-new.svg";
 import { AiOutlineInfoCircle } from "react-icons/ai";
-import LangSelector from "./langSelector";
+import LangSelector from "./LangSelector";
 import { useTranslation } from "react-i18next";
 
 const navbar = () => {
