@@ -15,7 +15,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <div data-aos="fade-up" className="bg-primary text-white">
+    <div className="bg-primary text-white">
       <footer className="footer p-10 container mx-auto">
         <nav>
           <div className="bg-white rounded-xl p-2 w-fit">
