@@ -6,6 +6,7 @@ import Event from './pages/Event'
 import About from './pages/About'
 import FAQ from './pages/FAQ'
 import Contact from './pages/Contact'
+import NotFound from './pages/NotFound'
 
 const App = () => {
   return (
@@ -16,6 +17,8 @@ const App = () => {
       <Route path='/about' element={<About/>} />
       <Route path='/faq' element={<FAQ/>} />
       <Route path='/contact' element={<Contact/>} />
+
+      <Route path='*' element={<NotFound/>} />
     </Routes>
   )
 }
