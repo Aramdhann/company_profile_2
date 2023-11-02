@@ -4,12 +4,13 @@ import logo_cashcepat from "../assets/logo_cashcepat.svg";
 import gap from "../assets/gap.svg";
 import logo_afpi from "../assets/AFPI_logo_merge.svg";
 import logo_ojk from "../assets/ojk-new.svg";
-import id_lang from "../assets/id_icon.png";
-import en_lang from "../assets/en_icon.png";
-import FraudNav from "../components/FraudNav";
 import { AiOutlineInfoCircle } from "react-icons/ai";
+import LangSelector from "./langSelector";
+import { useTranslation } from "react-i18next";
 
 const navbar = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="container mx-auto">
       <div className="navbar bg-white">
@@ -41,7 +42,7 @@ const navbar = () => {
                   className="text-base block rounded-lg hover:text-primary hover:bg-transparent"
                   aria-current="page"
                 >
-                  Home
+                  {t("navbar.btn-1")}
                 </Link>
               </li>
               <li>
@@ -49,7 +50,7 @@ const navbar = () => {
                   to="/product"
                   className="text-base block rounded-lg hover:text-primary hover:bg-transparent focus:bg-secondary"
                 >
-                  Produk
+                  {t("navbar.btn-2")}
                 </Link>
               </li>
               <li>
@@ -57,7 +58,7 @@ const navbar = () => {
                   to="/event"
                   className="text-base block rounded-lg hover:text-primary hover:bg-transparent focus:bg-secondary"
                 >
-                  Acara & Kegiatan
+                  {t("navbar.btn-3")}
                 </Link>
               </li>
               <li>
@@ -65,7 +66,7 @@ const navbar = () => {
                   to="/about"
                   className="text-base block rounded-lg hover:text-primary hover:bg-transparent focus:bg-secondary"
                 >
-                  Tentang Kami
+                  {t("navbar.btn-4")}
                 </Link>
               </li>
               <li>
@@ -73,7 +74,7 @@ const navbar = () => {
                   to="/faq"
                   className="text-base block rounded-lg hover:text-primary hover:bg-transparent focus:bg-secondary"
                 >
-                  FAQ
+                  {t("navbar.btn-5")}
                 </Link>
               </li>
               <li>
@@ -81,17 +82,11 @@ const navbar = () => {
                   to="/contact"
                   className="text-base block rounded-lg hover:text-primary hover:bg-transparent focus:bg-secondary"
                 >
-                  Hubungi Kami
+                  {t("navbar.btn-6")}
                 </Link>
               </li>
-              <div className="flex items-center gap-2 p-2">
-                <a href="">
-                  <img src={id_lang} alt="bahasa indonesia" className="w-6" />
-                </a>
-                <img src={gap} alt="gap" className="h-4 md:h-6" />
-                <a href="">
-                  <img src={en_lang} alt="bahasa inggris" className="w-6" />
-                </a>
+              <div className="flex sm:hidden items-center gap-2 p-2">
+                <LangSelector />
               </div>
             </ul>
           </div>
@@ -126,7 +121,7 @@ const navbar = () => {
                 className="text-xs md:text-base block rounded-lg hover:text-primary hover:bg-transparent"
                 aria-current="page"
               >
-                Home
+                {t("navbar.btn-1")}
               </Link>
             </li>
             <li>
@@ -134,7 +129,7 @@ const navbar = () => {
                 to="/product"
                 className="text-xs md:text-base block rounded-lg hover:text-primary hover:bg-transparent focus:bg-secondary"
               >
-                Produk
+                {t("navbar.btn-2")}
               </Link>
             </li>
             <li>
@@ -142,15 +137,15 @@ const navbar = () => {
                 to="/event"
                 className="text-xs md:text-base block rounded-lg md:w-[80px] text-center hover:text-primary hover:bg-transparent focus:bg-secondary p-0"
               >
-                Acara & Kegiatan
+                {t("navbar.btn-3")}
               </Link>
             </li>
             <li>
               <Link
                 to="/about"
-                className="text-xs md:text-base block rounded-lg md:w-[80px] text-center hover:text-primary hover:bg-transparent focus:bg-secondary p-0"
+                className="text-xs md:text-base block rounded-lg md:w-[80px] text-center hover:text-primary hover:bg-transparent focus:bg-secondary p-1"
               >
-                Tentang Kami
+                {t("navbar.btn-4")}
               </Link>
             </li>
             <li>
@@ -158,40 +153,28 @@ const navbar = () => {
                 to="/faq"
                 className="text-xs md:text-base block rounded-lg hover:text-primary hover:bg-transparent focus:bg-secondary"
               >
-                FAQ
+                {t("navbar.btn-5")}
               </Link>
             </li>
             <li>
               <Link
                 to="/contact"
-                className="text-xs md:text-base block rounded-lg md:w-[80px] text-center hover:text-primary hover:bg-transparent focus:bg-secondary p-0"
+                className="text-xs md:text-base block rounded-lg md:w-[80px] text-center hover:text-primary hover:bg-transparent focus:bg-secondary p-1"
               >
-                Hubungi Kami
+                {t("navbar.btn-6")}
               </Link>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
           <div className="items-center gap-[2px] md:gap-1 me-1 md:me-2 text-xs md:text-base hidden sm:flex">
-            <a href="">
-              <img
-                src={id_lang}
-                alt="bahasa indonesia"
-                className="w-6 md:w-8"
-              />
-            </a>
-            <img src={gap} alt="gap" className="h-4 md:h-6" />
-            <a href="">
-              <img src={en_lang} alt="bahasa inggris" className="w-6 md:w-8" />
-            </a>
+            <LangSelector />
           </div>
           <div className="text-dope bg-secondary focus:ring-4 focus:outline-none font-base rounded-lg text-xs md:text-sm px-1 py-2 md:px-2 text-center md:mr-0">
             <div className="flex items-center gap-1">
               TKB90 =<div className="value_tkb90">92.50%</div>
               <button
-                onClick={() =>
-                  document.getElementById("modal_tkb").showModal()
-                }
+                onClick={() => document.getElementById("modal_tkb").showModal()}
               >
                 <AiOutlineInfoCircle />
               </button>
@@ -208,7 +191,7 @@ const navbar = () => {
             </button>
           </form>
           <h3 className="font-bold text-lg">TKB Total</h3>
-          <p className="py-4">Tingkat Keberhasilan Total (TKB TOTAL) merupakan angka perbandingan nilai kredit bermasalah (Non Performing Loan / NPL) terhadap total nilai pinjaman yang berhasil disalurkan.</p>
+          <p className="py-4">{t("navbar.tkb-desc")}</p>
         </div>
       </dialog>
     </div>

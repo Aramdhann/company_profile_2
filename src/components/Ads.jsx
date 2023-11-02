@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 import woman from "../assets/women_orange.jpg";
 import playstore_download from "../assets/playstore_download.svg";
 import Fraud from "../components/Fraud";
+import { useTranslation } from "react-i18next";
 
 const Ads = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div data-aos="fade-in" className="bg-primary w-full h-full">
@@ -15,7 +18,7 @@ const Ads = () => {
           >
             <div className="flex flex-col">
               <p className="font-bold leading-tight text-lg md:text-4xl mb-3 md:mb-6 md:w-3/4">
-                "Download aplikasi CashCepat sekarang untuk pinjaman cepat!"
+                "{t("ads.title")}"
               </p>
               <Link
                 to="https://play.google.com/store/apps/details?id=com.ecreditpal.cashloan.indo&pcampaignid=web_share"
@@ -28,7 +31,7 @@ const Ads = () => {
                 />
               </Link>
               <p className="flex-auto text-dope text-xs md:text-base">
-                *) Hanya download aplikasi Cashcepat di Google Playstore
+                {t("ads.fraud")}
               </p>
             </div>
           </div>

@@ -4,8 +4,11 @@ import { MdEmail, MdFacebook } from "react-icons/md";
 import { AiFillInstagram, AiFillYoutube } from "react-icons/ai";
 import icon_telepon from "../assets/telepon.svg";
 import gap from "../assets/gap.svg";
+import { useTranslation } from "react-i18next";
 
 const ServiceHour = () => {
+  const {t} = useTranslation()
+  
   return (
     <div className="flex gap-3 sm:gap-5 md:gap-16 mx-auto justify-center py-20 sm:py-36 w-11/12">
       <div data-aos="fade-up" className="hidden md:flex">
@@ -13,18 +16,18 @@ const ServiceHour = () => {
       </div>
       <div className="flex flex-col gap-4 md:gap-6">
         <h1 data-aos="fade-up" className="font-bold text-2xl md:text-4xl">
-          Jam Pelayanan Telepon Konsumen
+          {t("serviceHour.title")}
         </h1>
         <div data-aos="fade-up" className="flex items-center gap-3 text-primary">
           <img src={icon_telepon} alt="icon telepon" className="w-10" />
           <div className="flex gap-3 items-center text-dope text-base">
             <div className="text-right">
-              <p className="font-bold leading-none">Senin - Jumat</p>
+              <p className="font-bold leading-none">{t("serviceHour.day-1")}</p>
               <p>08:00 - 17:00</p>
             </div>
             <img src={gap} alt="gap pembatas" className="h-6" />
             <div className="text-up">
-              <p className="font-bold leading-none">Sabtu</p>
+              <p className="font-bold leading-none">{t("serviceHour.day-2")}</p>
               <p>09:00 - 13:00</p>
             </div>
           </div>

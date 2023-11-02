@@ -4,15 +4,18 @@ import img_unduh from "../assets/unduh_regis.svg";
 import img_pilih from "../assets/pilih_produk.svg";
 import img_pencairan from "../assets/proses_pencairan.svg";
 import img_repayment from "../assets/repayment.svg";
+import { useTranslation } from "react-i18next";
 
 const QuickStep = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-wrap py-20 sm:py-36 items-center justify-center gap-12 px-10">
       <div className="flex justify-center">
         <div className="flex space-x-5">
           <img src={icon_4} alt="icon 4 langkah" />
           <p className="text-primary text-4xl font-bold w-[170px] bg-white">
-            Langkah Mudah Cashcepat
+            {t("easyWay.title")}
           </p>
         </div>
       </div>
@@ -25,12 +28,12 @@ const QuickStep = () => {
             <div className="flex items-center justify-center gap-4">
               <div className="text-primary text-6xl font-bold">1</div>
               <div className="font-bold text-lg leading-tight w-24">
-                Unduh dan Registrasi
+                {t("easyWay.way-1")}
               </div>
             </div>
           </div>
           <div className="w-40 text-center leading-tight">
-            Unduh, daftar, dan siapkan data diri Anda untuk pengajuan pinjaman.
+            {t("easyWay.desc-1")}
           </div>
         </div>
         <div data-aos="fade-up" className="grow flex-col items-center flex">
@@ -41,12 +44,12 @@ const QuickStep = () => {
             <div className="flex items-center justify-center gap-4">
               <div className="text-primary text-6xl font-bold">2</div>
               <div className="font-bold text-lg leading-tight w-28">
-                Pilih Produk dan Nominal
+                {t("easyWay.way-2")}
               </div>
             </div>
           </div>
           <div className="w-40 text-center leading-tight">
-            Pilih nominal dan tenor yang sesuai dengan kebutuhan Anda.
+            {t("easyWay.desc-2")}
           </div>
         </div>
         <div data-aos="fade-up" className="grow flex-col items-center flex">
@@ -56,14 +59,13 @@ const QuickStep = () => {
           <div>
             <div className="flex items-center justify-center gap-4">
               <div className="text-primary text-6xl font-bold ">3</div>
-              <div className="font-bold text-lg leading-tight w-7/12">
-                Proses Pencairan Dana
+              <div className="font-bold text-lg leading-tight w-40">
+                {t("easyWay.way-3")}
               </div>
             </div>
           </div>
-          <div className="w-40 text-center leading-tight">
-            Setelah diverifikasi tunggu pencairan dana yang akan segera masuk ke
-            rekening Anda.
+          <div className="w-44 text-center leading-tight">
+            {t("easyWay.desc-3")}
           </div>
         </div>
         <div data-aos="fade-up" className="grow flex-col items-center flex">
@@ -74,13 +76,12 @@ const QuickStep = () => {
             <div className="flex items-center justify-center gap-4">
               <div className="text-primary text-6xl font-bold ">4</div>
               <div className="font-bold text-lg leading-tight w-24">
-                Repayment
+                {t("easyWay.way-4")}
               </div>
             </div>
           </div>
           <div className="w-40 text-center leading-tight">
-            Lakukan repayment dengan mudah menggunakan Virtual Account (VA) yang
-            tertera pada aplikasi.
+            {t("easyWay.desc-4")}
           </div>
         </div>
       </div>

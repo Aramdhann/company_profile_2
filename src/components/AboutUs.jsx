@@ -1,22 +1,18 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 const AboutUs = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className="py-5 bg-gradient-to-r from-white to-primary w-full">
       <div className="flex flex-wrap flex-col md:flex-row items-center mx-auto container">
         <div data-aos="fade-right" className="p-5 md:p-14 md:w-6/12">
           <h1 className="font-bold text-3xl sm:text-4xl mb-4 md:text-6xl md:mb-7">
-            Tentang Kami
+            {t("about.title")}
           </h1>
           <p className="md:text-justify mb-8">
-            PT. Artha Permata Makmur, melalui produk Cashcepat, merupakan
-            penyedia layanan pendanaan berbasis teknologi informasi yang
-            berkomitmen untuk memberikan akses mudah dan cepat ke pendanaan bagi
-            masyarakat. Berizin dan diawasi oleh Otoritas Jasa Keuangan (OJK),
-            kami menghubungkan langsung antara pemberi dana dan penerima dana
-            melalui platform online kami. Dengan fokus pada kemudahan, keamanan,
-            dan kenyamanan, Cashcepat hadir untuk membantu mewujudkan berbagai
-            kebutuhan finansial Anda.
+            {t("about.description")}
           </p>
         </div>
         <div

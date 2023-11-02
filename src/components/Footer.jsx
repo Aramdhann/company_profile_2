@@ -9,8 +9,11 @@ import logo_afpi from "../assets/afpi-new-logo.svg";
 import logo_legal from "../assets/legal_afpi.svg";
 import logo_iso from "../assets/iso_logo.svg";
 import logo_kominfo from "../assets/kominfo_logo.svg";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <div data-aos="fade-up" className="bg-primary text-white">
       <footer className="footer p-10 container mx-auto">
@@ -19,7 +22,9 @@ const Footer = () => {
             <img src={logo_cashcepat} alt="logo cashcepat" />
           </div>
           <div className="mb-4">
-            <header className="footer-title text-xl text-dope">Kantor Pusat</header>
+            <header className="footer-title text-xl text-dope">
+              {t("footer.office")}
+            </header>
             <p className="text-sm md:text-base">
               Blue Bird Office Park 6th Floor, Jalan Mampang Prapatan No. 15
             </p>
@@ -62,19 +67,19 @@ const Footer = () => {
                 to="/"
                 className="text-base block mb-2 rounded-lg hover:text-dark_green md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 "
               >
-                Home
+                {t("navbar.btn-1")}
               </Link>
               <Link
                 to="/product"
                 className="text-base block mb-2 rounded-lg hover:text-dark_green md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 "
               >
-                Produk
+                {t("navbar.btn-2")}
               </Link>
               <Link
                 to="/event"
                 className="text-base block mb-2 rounded-lg hover:text-dark_green md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 "
               >
-                Acara & Kegiatan
+                {t("navbar.btn-3")}
               </Link>
             </div>
             <div className="flex-auto">
@@ -82,49 +87,53 @@ const Footer = () => {
                 to="/about"
                 className="text-base block mb-2 rounded-lg hover:text-dark_green md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 "
               >
-                Tentang Kami
+                {t("navbar.btn-4")}
               </Link>
               <Link
                 to="/faq"
                 className="text-base block mb-2 rounded-lg hover:text-dark_green md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 "
               >
-                FAQ
+                {t("navbar.btn-5")}
               </Link>
               <Link
                 to="/contact"
                 className="text-base block mb-2 rounded-lg hover:text-dark_green md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 "
               >
-                Hubungi Kami
+                {t("navbar.btn-6")}
               </Link>
             </div>
           </div>
           <div className="flex flex-col">
-              <p className="footer-title text-xl text-dope mb-2">
-                Download aplikasinya:
-              </p>
-              <Link to="https://play.google.com/store/apps/details?id=com.ecreditpal.cashloan.indo&pcampaignid=web_share">
-                <img
-                  src={playstore_download}
-                  alt="img_playstore"
-                  className="inline-block w-1/2 sm:w-auto"
-                />
-              </Link>
-              <p className="flex-auto text-dope text-xs md:text-base">
-                *) Hanya download aplikasi Cashcepat di Google Playstore
-              </p>
-            </div>
+            <p className="footer-title text-xl text-dope mb-2">
+              {t('footer.download')}
+            </p>
+            <Link to="https://play.google.com/store/apps/details?id=com.ecreditpal.cashloan.indo&pcampaignid=web_share">
+              <img
+                src={playstore_download}
+                alt="img_playstore"
+                className="inline-block w-1/2 sm:w-auto"
+              />
+            </Link>
+            <p className="flex-auto text-dope text-xs md:text-base">
+              {t('footer.fraud')}
+            </p>
+          </div>
         </nav>
         <nav>
           <div className="flex flex-col gap-5">
             <div className="flex grow">
               <div>
-                <p className="mb-2 footer-title text-dope">Berizin dan Diawasi Oleh:</p>
+                <p className="mb-2 footer-title text-dope">
+                  {t('trusted.ojk')}
+                </p>
                 <img src={logo_ojk} alt="logo OJK" className="h-12 md:h-8" />
               </div>
             </div>
             <div className="flex grow">
               <div>
-                <p className="mb-2 footer-title text-dope">Anggota terdaftar dari:</p>
+                <p className="mb-2 footer-title text-dope">
+                  {t('trusted.afpi')}
+                </p>
                 <div className="flex flex-row space-x-5">
                   <img
                     src={logo_afpi}
@@ -141,13 +150,15 @@ const Footer = () => {
             </div>
             <div className="flex grow">
               <div>
-                <p className="mb-2 footer-title text-dope">Tersertifikasi ISO:</p>
+                <p className="mb-2 footer-title text-dope">
+                  {t('trusted.iso')}
+                </p>
                 <img src={logo_iso} alt="logo iso" className="h-12 md:h-8" />
               </div>
             </div>
             <div className="flex grow">
               <div>
-                <p className="mb-2 footer-title text-dope">Terdaftar di:</p>
+                <p className="mb-2 footer-title text-dope">{t('trusted.kominfo')}</p>
                 <img
                   src={logo_kominfo}
                   alt="logo kominfo"

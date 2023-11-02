@@ -108,3 +108,14 @@ input[type="range"]:focus::-moz-range-thumb {
   background-position: center;
   background-size: cover;
 }
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+  font-weight: 700;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

@@ -9,8 +9,11 @@ import icon_telepon from "../assets/telepon.svg";
 import gap from "../assets/gap.svg";
 import { Link } from "react-router-dom";
 import FraudNav from "../components/FraudNav";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <Navbar />
@@ -18,7 +21,7 @@ const Contact = () => {
       <div className="flex flex-col justify-center mx-auto container">
         <div data-aos="fade-up" className="mt-4 mb-10 flex justify-center">
           <h1 className="text-center font-bold text-2xl sm:text-3xl md:text-4xl">
-            Hubungi Kami
+            {t("serviceHour.title-2")}
           </h1>
         </div>
         <div className="flex flex-wrap gap-5 justify-center mx-auto">
@@ -32,7 +35,7 @@ const Contact = () => {
             </div>
             <div className="flex flex-col gap-4 md:gap-6">
               <h1 data-aos="fade-up" className="font-bold text-xl md:text-2xl">
-                Jam Pelayanan Telepon Konsumen
+                {t("serviceHour.title")}
               </h1>
               <div
                 data-aos="fade-up"
@@ -41,12 +44,16 @@ const Contact = () => {
                 <img src={icon_telepon} alt="icon telepon" className="w-10" />
                 <div className="flex gap-3 items-center text-dope text-base">
                   <div className="text-right">
-                    <p className="font-bold leading-none">Senin - Jumat</p>
+                    <p className="font-bold leading-none">
+                      {t("serviceHour.day-1")}
+                    </p>
                     <p>08:00 - 17:00</p>
                   </div>
                   <img src={gap} alt="gap pembatas" className="h-6" />
                   <div className="text-left">
-                    <p className="font-bold leading-none">Sabtu</p>
+                    <p className="font-bold leading-none">
+                      {t("serviceHour.day-2")}
+                    </p>
                     <p>09:00 - 13:00</p>
                   </div>
                 </div>
@@ -110,7 +117,7 @@ const Contact = () => {
           >
             <div className="flex flex-col gap-5">
               <p className="text-4xl font-bold text-white text-center">
-                Hubungi Kami
+                {t("serviceHour.title-2")}
               </p>
               <form className="flex flex-col gap-4">
                 <div>
@@ -118,13 +125,13 @@ const Contact = () => {
                     htmlFor="first_name"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
-                    Nama
+                    {t("serviceHour.name")}
                   </label>
                   <input
                     type="text"
                     id="name"
                     className="input input-bordered input-secondary w-full max-w-xs"
-                    placeholder="type here ..."
+                    placeholder={t("serviceHour.type")}
                     required
                   />
                 </div>
@@ -139,7 +146,7 @@ const Contact = () => {
                     type="email"
                     id="email"
                     className="input input-bordered input-secondary w-full max-w-xs"
-                    placeholder="type here ..."
+                    placeholder={t("serviceHour.type")}
                     required
                   />
                 </div>
@@ -148,14 +155,14 @@ const Contact = () => {
                     htmlFor="email"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
-                    Pesan
+                    {t("serviceHour.message")}
                   </label>
                   <textarea
                     type="text"
                     id="message"
                     rows="4"
                     className="textarea textarea-secondary w-full"
-                    placeholder="type here ..."
+                    placeholder={t("serviceHour.type")}
                   ></textarea>
                 </div>
               </form>
@@ -167,16 +174,14 @@ const Contact = () => {
                   type="button"
                   className="text-dope bg-secondary outline-yellow-600 hover:bg-yellow-400 focus:outline-none focus:ring-4 focus:ring-yellow-300 rounded-full text-xl font-bold px-5 py-2.5 text-center dark:focus:ring-yellow-900"
                 >
-                  Kirimkan Pesan
+                  {t("serviceHour.send")}
                 </button>
               </Link>
             </div>
           </div>
         </div>
       </div>
-      <div className="-mb-2">
-        <Ads />
-      </div>
+      <Ads />
       <Footer />
     </>
   );

@@ -8,14 +8,14 @@ import Visi from "../components/Visi";
 import Directur from "../components/Directur";
 import Program from "../components/Program";
 import DetailBisnis from "../components/DetailBisnis";
-import Report from '../components/Report'
+import Report from "../components/Report";
 import FraudNav from "../components/FraudNav";
 
 const About = () => {
   return (
     <>
       <Navbar />
-      <FraudNav/>
+      <FraudNav />
       <div className="flex justify-center mx-auto border">
         <AboutUs />
       </div>
@@ -24,10 +24,8 @@ const About = () => {
       <Directur />
       <Program />
       <DetailBisnis />
-      <Report/>
-      <div className="-mb-2">
-        <Ads />
-      </div>
+      <Report />
+      <Ads />
       <Footer />
     </>
   );

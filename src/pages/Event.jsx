@@ -9,8 +9,11 @@ import {
   MdLink,
 } from "react-icons/md";
 import FraudNav from "../components/FraudNav";
+import { useTranslation } from "react-i18next";
 
 const Event = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <Navbar />
@@ -18,7 +21,7 @@ const Event = () => {
       <div className="mx-auto">
         <div data-aos="fade-up" className="my-4">
           <h1 className="text-center font-bold text-2xl sm:text-3xl md:text-4xl">
-            Acara dan Kegiatan
+            {t("event.title")}
           </h1>
         </div>
 
@@ -33,25 +36,25 @@ const Event = () => {
                     <th>
                       <div className="flex items-center gap-1">
                         <MdDateRange />
-                        <p>Tanggal</p>
+                        <p>{t("event.date")}</p>
                       </div>
                     </th>
                     <th>
                       <div className="flex items-center gap-1">
                         <MdFormatListBulleted />
-                        <p>Kegiatan Acara</p>
+                        <p>{t("event.activity")}</p>
                       </div>
                     </th>
                     <th>
                       <div className="flex items-center gap-1">
                         <MdLocationPin />
-                        <p>Lokasi</p>
+                        <p>{t("event.location")}</p>
                       </div>
                     </th>
                     <th>
                       <div className="flex items-center gap-1">
                         <MdLink />
-                        <p>Liputan</p>
+                        <p>{t("event.coverage")}</p>
                       </div>
                     </th>
                   </tr>
@@ -78,9 +81,7 @@ const Event = () => {
           </div>
         </div>
       </div>
-      <div className="-mb-2">
-        <Ads />
-      </div>
+      <Ads />
       <Footer />
     </>
   );

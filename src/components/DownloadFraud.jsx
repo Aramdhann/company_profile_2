@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import playstore_download from "../assets/playstore_download.svg";
 import warning from "../assets/warning.svg";
+import { Trans } from "react-i18next";
 
 const DownloadFraud = () => {
   return (
@@ -18,9 +19,10 @@ const DownloadFraud = () => {
           <img src={warning} alt="icon warning" />
         </div>
         <p className="flex-auto text-xs md:text-base">
-          <b>Hindari penipuan!</b> selalu gunakan aplikasi resmi Cashcepat yang
-          <b> di Google Playstore</b>. Hanya gunakan VA yang tertera di aplikasi
+          <Trans i18nKey={"fraud"}>
+          <strong>Hindari penipuan!</strong> selalu gunakan aplikasi resmi Cashcepat yang <strong> di Google Playstore</strong>. Hanya gunakan VA yang tertera di aplikasi
           Cashcepat untuk seluruh transaksi pembayaran Anda.
+          </Trans>
         </p>
       </div>
     </>
