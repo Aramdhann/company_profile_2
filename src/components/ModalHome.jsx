@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import warning from "../assets/warning.svg";
 import { useTranslation, Trans } from "react-i18next";
-import LangSelector from "./langSelector";
+import LangSelector from "./LangSelector";
 
 const ModalHome = () => {
   const { t } = useTranslation();
