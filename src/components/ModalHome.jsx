@@ -2,16 +2,25 @@ import React, { useEffect } from "react";
 import warning from "../assets/warning.svg";
 import { useTranslation, Trans } from "react-i18next";
 import LangSelector from "./LangSelector";
+import Cookies from "js-cookie";
 
 const ModalHome = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
     const modal = document.getElementById("my_modal_1");
-    if (modal) {
+    if (modal && !Cookies.get("agreed")) {
       modal.showModal();
     }
   }, []);
+
+  const handleAgree = () => {
+    Cookies.set("agreed", "true", { expires: 1 }); // 1 day expired
+    const modal = document.getElementById("my_modal_1");
+    if (modal) {
+      modal.close();
+    }
+  };
 
   return (
     <>
@@ -99,7 +108,10 @@ const ModalHome = () => {
             </ol>
             <div className="modal-action mt-4 mb-1 justify-center">
               <form method="dialog">
-                <button className="btn uppercase bg-primary rounded-full hover:bg-secondary">
+                <button
+                  className="btn uppercase bg-primary rounded-full hover:bg-secondary"
+                  onClick={handleAgree}
+                >
                   {t("modal.agree")}
                 </button>
               </form>

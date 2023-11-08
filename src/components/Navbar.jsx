@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo_cashcepat from "../assets/logo_cashcepat.svg";
 import gap from "../assets/gap.svg";
@@ -10,6 +10,14 @@ import { useTranslation } from "react-i18next";
 
 const navbar = () => {
   const { t } = useTranslation();
+  const [tkbValue, setTkbValue] = useState({});
+
+  useEffect(() => {
+    fetch("http://localhost:8081/tkb") // Assuming your Express server is running on port 8081
+      .then((response) => response.json())
+      .then((data) => setTkbValue(data))
+      .catch((error) => console.error(error));
+  }, []);
 
   return (
     <div className="container mx-auto">
@@ -172,7 +180,8 @@ const navbar = () => {
           </div>
           <div className="text-dope bg-secondary focus:ring-4 focus:outline-none font-base rounded-lg text-xs md:text-sm px-1 py-2 md:px-2 text-center md:mr-0">
             <div className="flex items-center gap-1">
-              TKB90 =<div className="value_tkb90">92.50%</div>
+              TKB90 =
+              {tkbValue.tkb}
               <button
                 onClick={() => document.getElementById("modal_tkb").showModal()}
               >

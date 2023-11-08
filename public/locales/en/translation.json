@@ -52,9 +52,20 @@
     "day-1": "Monday - Friday",
     "day-2": "Saturday",
     "name": "Name",
+    "phone": "Phone Number",
     "message": "Message",
     "send": "Send Message",
-    "type": "Type here..."
+    "type": "Type here...",
+    "area": "Write your message here...",
+    "report": "type of complaint",
+    "complaintType": "Complaint Type",
+    "complaintTypes": {
+      "pengajuan": "Submission",
+      "pembayaran": "Payment",
+      "aplikasi": "Application",
+      "informasi": "Information",
+      "lain-lain": "Other"
+    }
   },
   "footer": {
     "office": "Head Office",
@@ -75,6 +86,7 @@
   "event": {
     "title": "Events and Activities",
     "date": "Date",
+    "enddate": "End Date",
     "activity": "Event Activity",
     "location": "Location",
     "coverage": "Coverage"
@@ -150,5 +162,15 @@
     "paraph-11": "The content and materials available on the site <strong>www.cashcepat.id </strong> are intended to provide information and are not considered an offer, solicitation, invitation, advice or recommendation to invest in securities, products capital markets, or other financial services. The company provides its services only limited to administrative functions.",
     "paraph-12": "Funding and loans placed in the <strong>Cashcepat</strong> account are not and will not be considered as deposits held by the Company as regulated in the Laws and Regulations on Banking in Indonesia. The Company or any Director , Officers, Employees, Representatives, Affiliates, or Agents have no responsibility in connection with any disturbance or problem that occurs or is deemed to occur due to the lack of preparation or publication of the material listed on the Company's website.",
     "agree": "agree"
+  },
+  "cs": {
+    "flow-1": "Consumers make complaints via contact cashcepat <strong>(021) 83782891/92</strong>, email cashcepat <strong>(cs@cashcepat.co.id)</strong>, or fill out the form <strong>'Contact Us'</strong>.",
+    "flow-2": "Waiting for analysis regarding the problem for a maximum of 24 hours.",
+    "flow-3": "Information regarding updates to the problem will be sent back via the reporter's email."
+  },
+  "modal-email": {
+    "title": "your email was successfully sent",
+    "message": "We are reviewing your message and will contact you via the telephone number or email listed within a maximum of 24 hours. Thank you for your understanding.",
+    "button": "close"
   }
 }

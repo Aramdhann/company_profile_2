@@ -52,9 +52,20 @@
     "day-1": "Senin - Jumat",
     "day-2": "Sabtu",
     "name": "Nama",
+    "phone": "Nomor Telephone",
     "message": "Pesan",
     "send": "Kirimkan Pesan",
-    "type": "Ketik di sini..."
+    "type": "Ketik di sini...",
+    "area": "Tulis pesan Anda di sini...",
+    "report": "jenis pengaduan",
+    "complaintType": "Jenis Pengajuan",
+    "complaintTypes": {
+      "pengajuan": "Pengajuan",
+      "pembayaran": "Pembayaran",
+      "aplikasi": "Aplikasi",
+      "informasi": "Informasi",
+      "lain-lain": "Lainnya"
+    }
   },
   "footer": {
     "office": "Kantor Pusat",
@@ -75,6 +86,7 @@
   "event": {
     "title": "Acara dan Kegiatan",
     "date": "Tanggal",
+    "enddate": "Tanggal Selesai",
     "activity": "Kegiatan Acara",
     "location": "Lokasi",
     "coverage": "Liputan"
@@ -150,5 +162,15 @@
     "paraph-11": "Isi dan materi yang tersedia pada situs <strong>www.cashcepat.id </strong> dimaksudkan untuk memberikan informasi dan tidak dianggap sebagai sebuah penawaran, permohonan, undangan, saran, maupun rekomendasi untuk menginvestasikan sekuritas, produk pasar modal, atau jasa keuangan lainya. Perusahaan dalam memberikan jasanya hanya terbatas pada fungsi administratif.",
     "paraph-12": "Pendanaan dan pinjaman yang ditempatkan di rekening <strong>Cashcepat</strong> adalah tidak dan tidak akan dianggap sebagai simpanan yang diselenggarakan oleh Perusahaan seperti diatur dalam Peraturan Perundang-Undangan tentang Perbankan di Indonesia. Perusahaan atau setiap Direktur, Pegawai, Karyawan, Wakil, Afiliasi, atau Agen-Agennya tidak memiliki tanggung jawab terkait dengan setiap gangguan atau masalah yang terjadi atau yang dianggap terjadi yang disebabkan oleh minimnya persiapan atau publikasi dari materi yang tercantum pada situs Perusahaan.",
     "agree": "setuju"
+  },
+  "cs": {
+    "flow-1": "Konsumen melakukan pengaduan melalui, kontak cashcepat <strong>(021) 83782891/92</strong>, email cashcepat <strong>(cs@cashcepat.co.id)</strong>, atau mengisi form <strong>'Hubungi Kami'</strong>.",
+    "flow-2": "Menunggu analisa terkait masalah tersebut selama maksimal 24 jam.",
+    "flow-3": "Informasi mengenai update masalah tersebut akan dikirimkan kembali melalui email pelapor."
+  },
+  "modal-email": {
+    "title": "email anda sukses terkirim",
+    "message": "Kami sedang meninjau pesan Anda dan akan menghubungi Anda melalui nomor telepon atau email yang tertera dalam waktu maksimal 24 jam. Terima kasih atas pengertiannya.",
+    "button": "tutup"
   }
 }
