@@ -13,7 +13,7 @@ const navbar = () => {
   const [tkbValue, setTkbValue] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:8081/tkb") // Assuming your Express server is running on port 8081
+    fetch("http://103.127.98.184/tkb") // Assuming your Express server is running on port 8081
       .then((response) => response.json())
       .then((data) => setTkbValue(data))
       .catch((error) => console.error(error));

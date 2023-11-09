@@ -6,7 +6,7 @@ const DetailBisnis = () => {
   const [detailData, setDetailData] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:8081/detail-bisnis")
+    fetch("http://103.127.98.184/detail-bisnis")
       .then((response) => response.json())
       .then((data) => setDetailData(data))
       .catch((error) => console.error(error));

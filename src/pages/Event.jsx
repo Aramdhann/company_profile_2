@@ -17,7 +17,7 @@ const Event = () => {
   const [eventsPerPage, setEventsPerPage] = useState(10);
 
   useEffect(() => {
-    fetch("http://localhost:8081/event") // Assuming your Express server is running on port 8081
+    fetch("http://103.127.98.184/event") // Assuming your Express server is running on port 8081
       .then((response) => response.json())
       .then((data) => setEvents(data))
       .catch((error) => console.error(error));

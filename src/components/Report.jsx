@@ -8,21 +8,21 @@ const Report = () => {
   const [opini, setOpini] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:8081/finance")
+    fetch("http://103.127.98.184/finance")
       .then((response) => response.json())
       .then((data) => setDetailData(data))
       .catch((error) => console.error(error));
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:8081/comprehensif")
+    fetch("http://103.127.98.184/comprehensif")
       .then((response) => response.json())
       .then((data) => setDetailDataCompre(data))
       .catch((error) => console.error(error));
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:8081/opini-audit")
+    fetch("http://103.127.98.184/opini-audit")
       .then((response) => response.json())
       .then((data) => setOpini(data))
       .catch((error) => console.error(error));
